@@ -81,12 +81,62 @@
             width: 25px;
             height: 25px;
         }
+        #navbar{
+            display: flex;
+            height: 100px;
+            margin: 20px;
+            font-size: 13px;
+        }
+        #left-nav{
+            margin-left: auto;
+        }
+        .nav-link{
+            text-decoration: none;
+            color: black;
+        }
+        .nav-link:hover{
+            text-decoration: underline;
+        }
+        #about{
+            margin-right: 20px;
+        }
+        #gmail{
+            margin-right: 20px;
+        }
+        #hamburger{
+            display: grid;
+            grid-template-columns: 8px 8px 8px;
+            grid-template-rows: 8px 8px 8px;
+            column-gap: 3px;
+            row-gap: 3px;
+            width: 30px;
+        }
+        .hamburger-item{
+            background-color: rgb(46, 46, 46);
+        }
     </style>
 </head>
 
 <body>
 
 <main>
+    <nav id ="navbar">
+        <div id = "right-nav">
+        <a class = "nav-link" href="" id = "about">About</a>
+        <a class = "nav-link" href="">Store</a>
+        </div>
+        <section id = "left-nav">
+            
+        <a class = "nav-link" href="" id = "gmail">Gmail</a>
+        <a class = "nav-link" href="">Images</a>
+            
+        
+        </section>  
+        <div id = hamburger>
+            <p class = "hamburger-item"></p> <p class = "hamburger-item"></p> <p class = "hamburger-item"></p> <p class = "hamburger-item"></p> <p class = "hamburger-item"></p> <p class = "hamburger-item"></p> <p class = "hamburger-item"></p> <p class = "hamburger-item"></p> <p class = "hamburger-item"></p>
+        </div>
+        <button type = "button">Sign in</button>
+    </nav>
     <section id = "logo-form">
     <img id = "google-logo" src = "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt ="google logo">
             <form action="" id = "search-form">
