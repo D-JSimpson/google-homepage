@@ -2,12 +2,54 @@
 <html lang ="en">
 <head>
     <meta charset ="UTF-8">
+
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        #logo-form{
+            display: flex;
+            width: 100vw;
+           align-items: center;
+           justify-content: center;
+           height: 70vh;
+           flex-direction: column;
+        }
+        #google-logo{
+            max-width: 272px;
+            max-height: 92px;
+            
+        }
+        #search-form{
+            display: grid;
+            grid-template-columns: 250px 250px;
+            grid-template-rows:  50px 100px;
+        }
+        #search-field{
+            grid-row: 1 / 2;
+            grid-column: 1 / 3;
+        }
+        #search{
+            place-self: center;
+        }
+        #lucky{
+            place-self: center;
+        }
+    </style>
 </head>
 
 <body>
 
 <main>
-Hello
+    <section id = "logo-form">
+    <img id = "google-logo" src = "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt ="google logo">
+            <form action="" id = "search-form">
+                <input id = "search-field">
+                <button type ="submit" id ="search">Google Search</button>
+                <button type ="submit" id = "lucky">I'm feeling lucky</button>
+            </form>
+    </section>
 </main>
 
 
