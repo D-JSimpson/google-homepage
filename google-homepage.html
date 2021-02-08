@@ -48,7 +48,7 @@
             justify-self: flex-start;
             
         }
-        button{
+        main > section > form > button{
             align-self: center;
             background-color: rgb(236, 236, 236);
             border-color: rgb(236, 236, 236);
@@ -84,8 +84,9 @@
         #navbar{
             display: flex;
             height: 100px;
-            margin: 20px;
+            margin-left: 20px;
             font-size: 13px;
+            align-items: center;
         }
         #left-nav{
             margin-left: auto;
@@ -105,14 +106,30 @@
         }
         #hamburger{
             display: grid;
-            grid-template-columns: 8px 8px 8px;
-            grid-template-rows: 8px 8px 8px;
+            grid-template-columns: 6px 6px 6px;
+            grid-template-rows: 6px 6px 6px;
             column-gap: 3px;
             row-gap: 3px;
             width: 30px;
+            margin-left: 10px;
+            margin-right: 10px;
         }
         .hamburger-item{
             background-color: rgb(46, 46, 46);
+        }
+        #sign-in{
+            width: 80px;
+            height: 40px;
+            margin-right: 20px;
+            background-color: #4285f4;
+            color: white;
+            font-weight: 900;
+            border-color: #4285f4;
+            border-style: none;
+        }
+        #sign-in:hover{
+            box-shadow: 0px 0px 3px 1px lightgray;
+            border-color: white;
         }
     </style>
 </head>
@@ -135,7 +152,7 @@
         <div id = hamburger>
             <p class = "hamburger-item"></p> <p class = "hamburger-item"></p> <p class = "hamburger-item"></p> <p class = "hamburger-item"></p> <p class = "hamburger-item"></p> <p class = "hamburger-item"></p> <p class = "hamburger-item"></p> <p class = "hamburger-item"></p> <p class = "hamburger-item"></p>
         </div>
-        <button type = "button">Sign in</button>
+        <button id ="sign-in" type = "button">Sign in</button>
     </nav>
     <section id = "logo-form">
     <img id = "google-logo" src = "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt ="google logo">
